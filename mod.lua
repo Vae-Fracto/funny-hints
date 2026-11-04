@@ -111,6 +111,9 @@ FH = {
         }
     },
     messages = {
+        --set_unit
+        welcome_player = { "Fresh meat!", "Give a warm welcome to $TEAMMATE;!", "$TEAMMATE; is here to save the day!", "Do I know $TEAMMATE;?", "Who the fuck is this shmuck?", "It's so nice of $TEAMMATE; to finally join us!", "Another mouth to feed.", "Welcome to the team, $TEAMMATE;.", "I hope you and $TEAMMATE; aren't... you know...", "Who invited $TEAMMATE;?", "Ah, $TEAMMATE;! Glad to finally have someone competent.", "$TEAMMATE; is here to pick up the slack.", "$TEAMMATE; is only gonna drag you down.", "Would be funny if you kicked $TEAMMATE; right now.", "The bot was better.", "Hope $TEAMMATE; brough aced deployables.", "At least they're better than the clanker.", "You know there's more enemies the more players you have?", "It's a bird, it's a plane! Oh. No, it's just $TEAMMATE;.", "I'd rather a tank but $TEAMMATE; will have to do.", "At last, $TEAMMATE; is here!", "Did $TEAMMATE; bring snacks?", "Now it's a party!", "Where did $TEAMMATE; come from?", "$TEAMMATE; magically appears.", "Another ammo eater.", "Oh hi, $TEAMMATE;.", "Oh no, it's $TEAMMATE;...", "$TEAMMATE; jumpscare!", "I used to know a $TEAMMATE;, they were a weirdo.", ":)", "I like $TEAMMATE;.", "I hate $TEAMMATE;." },
+
         --Networked
         hint_teammate_downed_generic = {}, -- uses hint_teammate_downed messages
 
@@ -1041,7 +1044,7 @@ function FH.select_hint(id)
     local selected_message = clean_weights_and_select(id, message_table, weight_table, false, false)
 
     local app_time = Application:time()
-    if FH.last_hint and FH.last_hint.time + 0.03 > app_time then -- if it's overriding another message +0.03 is to account for a single frame at 30fps
+    if FH.last_hint and FH.last_hint.id ~= "hint_cant_stand_up" and FH.last_hint.time + 0.03 > app_time then -- if it's overriding another message +0.03 is to account for a single frame at 30fps
         Global.FH.weights[FH.last_hint.id][FH.last_hint.text] = 0
         FH.log("Two messages played at once.\n" .. FH.last_hint.id .. "\n" .. id)
     end
@@ -1145,6 +1148,7 @@ local function mark_of_shame_message(name, reason)
     managers.chat:_receive_message(1, "SYSTEM", name .. " has received the Mark of Shame for " .. reason .. ".", tweak_data.system_chat_color)
 end
 
+FH.marked_players = {}
 function FH.mark_player(peer_id, text, color)
     local name_label = managers.hud:_name_label_by_peer_id(peer_id)
 
@@ -1171,6 +1175,7 @@ function FH.mark_player(peer_id, text, color)
         end
     end
     managers.hud:mark_cheater(peer_id)
+    FH.marked_players[peer_id] = {text = text, color = color}
 end
 
 -- Networking
@@ -1253,7 +1258,6 @@ end
 
 local function sequence_failed(id, key, retry)
     FH.log("Can't play sequence " .. key)
-    Global.FH.weights.sequences[id][key] = 1
 
     if retry then
         FH.start_sequence(id)
@@ -1264,6 +1268,8 @@ local function sequence_failed(id, key, retry)
             FH.show_hint(id)
         end
     end
+
+    Global.FH.weights.sequences[id][key] = 1
 end
 
 function FH.start_sequence(id, testing_key)

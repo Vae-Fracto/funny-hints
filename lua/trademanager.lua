@@ -53,6 +53,6 @@ Hooks:PreHook(TradeManager, "sync_teammate_helped_hint", "sync_teammate_helped_h
 
     if not helper_is_bot then
         FH.units_reviving[helper_id] = false
-        FH.log("Cleared " .. helper_id .. " reviveing state")
+        --FH.log("Cleared " .. helper_id .. " reviveing state")
     end
 end)

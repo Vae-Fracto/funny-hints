@@ -35,7 +35,9 @@ Hooks:PreHook(HintManager, "_show_hint", "_show_hint_FH_pre", function(self, hin
 end)
 Hooks:PostHook(HintManager, "_show_hint", "_show_hint_FH_post", function(self, hint_id, time, params)
 	if skip_hint then
-		managers.hud.show_hint = Global.FH.show_hint_stored
+		if not FH.hints_are_blocked() then
+			managers.hud.show_hint = Global.FH.show_hint_stored
+		end
 		skip_hint = false
 	end
 end)

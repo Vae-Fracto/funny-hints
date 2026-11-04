@@ -90,6 +90,6 @@ end)
 Hooks:PreHook(HUDManager, "teammate_progress", "teammate_progress_FH", function(self, peer_id, type_index, enabled, tweak_data_id, timer, success)
     if tweak_data_id == "revive" and success then
         FH.units_reviving[peer_id] = true
-        FH.log("Set " .. peer_id .. " reviveing state to " .. tostring(true))
+        --FH.log("Set " .. peer_id .. " reviveing state to " .. tostring(true))
     end
 end)
