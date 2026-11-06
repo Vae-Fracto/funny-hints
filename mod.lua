@@ -150,8 +150,8 @@ FH = {
 
         hint_you_helpedup = { "You're a real teamplayer!", "Good work helping $TEAMMATE;!", "You got $TEAMMATE; back in the fight.", "Let's hope $TEAMMATE; appreciates that.", "You're $TEAMMATE;'s hero!", "$TEAMMATE; will thank you some day.", "$TEAMMATE; is still here thanks to you.", "You delayed $TEAMMATE;'s death.", "You should have just let $TEAMMATE; die.", "I don't think $TEAMMATE; deserved that.", "You're so nice.", "I'm proud of you.", "You put a smile on $TEAMMATE;'s face.", "[ $TEAMMATE; liked that ]", "That's it! Leave no one behind.", "Good job.", "Mates forever.", "You care about $TEAMMATE;, admit it.", "I would have never forgiven you if $TEAMMATE; died.", "I'm giving you a gold star.", "Your mother's very proud.", "That's your good deed for the day.", "Apes together strong." },
         hint_you_helpedup_touch = { "Give $TEAMMATE; a friendly smack for me.", "You got $TEAMMATE;'s blood on you. Ew...", "$TEAMMATE; is still a little sticky.", "Feel $TEAMMATE;'s muscle. Mhh!", "Ew you touched $TEAMMATE;!", "You don't look good. I think $TEAMMATE; got you sick.", "You have HIV now.", "You got the cooties now!", "Did you and $TEAMMATE; kiss?", "Get a room.", "Remember to wash your hands." },
-        hint_teammate_helpedup = { "$TEAMMATE; is back in the fight!", "Don't worry $HELPER; got it.", "$HELPER; took care of $TEAMMATE; for you.", "$HELPER; is pretty cool. I bet $TEAMMATE; agrees.", "Never fear, $HELPER; is here!", "Thank $HELPER;.", "$TEAMMATE; is back up. No thanks to you.", "$HELPER; saved $TEAMMATE;!", "$HELPER; is better than you.", "$TEAMMATE; and $HELPER; are now best friends.", "A bond like $HELPER; and $TEAMMATE;'s can never be broken.", "$HELPER; is the MVP right now.", "$HELPER; got to $TEAMMATE; first.", "Does $HELPER; have to do everything for you?", "You should have been the one to help $TEAMMATE;.", "$TEAMMATE; wanted you but had to settle for $HELPER;.", "Helping $TEAMMATE; was your job.", "Too late. $HELPER; got the credit.", "$HELPER; is getting a reward from me.", "We all knew $HELPER; was better than you.", "$HELPER; brought a smile to $TEAMMATE;'s face.", "You won't get $TEAMMATE;'s love now.", "Why didn't you help $TEAMMATE;?", "Oh well, $TEAMMATE;'s taken care of.", "$HELPER; thought $TEAMMATE; deserved some help.", "Do you think $TEAMMATE; doesn't deserve your help?", "Situation over. $TEAMMATE;'s back up.", "$HELPER; earned some social credit.", "$TEAMMATE; is back up.", "$TEAMMATE;'s fine.", "I'm sure $TEAMMATE; didn't need really need the help anyway.", "I would have praised you if you helped.", "Now you're not getting the gold star.", "$HELPER; is the best.", "$HELPER; deserves a medal.", "Don't worry, $TEAMMATE; isn't dying anymore.", "$HELPER; has $TEAMMATE;'s back.", "What would we do without $HELPER;.", "Don't forget to help too. $HELPER; won't always be there.", "No need to feel bad for $TEAMMATE;. $HELPER; helped.", "$HELPER; was just closer to $TEAMMATE;, right?" },
-        hint_teammate_helpedup_touch = { "$HELPER; and $TEAMMATE; touched each other.", "You think $HELPER; has medical training?", "$HELPER; and $TEAMMATE;, sitting in a tree, K-I-S-S-I-N-G!", "$TEAMMATE; gave $HELPER; the cooties.", "I think $HELPER; loves $TEAMMATE;.", "$TEAMMATE; and $HELPER; look cute together.", "I ship $TEAMMATE; and $HELPER;." },
+        hint_teammate_helpedup = { "$TEAMMATE; is back in the fight!", "Don't worry $HELPER; got it.", "$HELPER; took care of $TEAMMATE; for you.", "$HELPER; is pretty cool. I bet $TEAMMATE; agrees.", "Never fear, $HELPER; is here!", "Thank $HELPER;.", "$TEAMMATE; is back up. No thanks to you.", "$HELPER; saved $TEAMMATE;!", --[["$HELPER; is better than you.",]] "$TEAMMATE; and $HELPER; are now best friends.", "A bond like $HELPER; and $TEAMMATE;'s can never be broken.", "$HELPER; is the MVP right now.", "$HELPER; got to $TEAMMATE; first.", "Does $HELPER; have to do everything for you?", --[["You should have been the one to help $TEAMMATE;.",]] "$TEAMMATE; wanted you but had to settle for $HELPER;.", --[["Helping $TEAMMATE; was your job.",]] "Too late. $HELPER; got the credit.", "$HELPER; is getting a reward from me.", --[["We all knew $HELPER; was better than you.",]] "$HELPER; brought a smile to $TEAMMATE;'s face.", "You won't get $TEAMMATE;'s love now.", --[["Why didn't you help $TEAMMATE;?",]] "Oh well, $TEAMMATE;'s taken care of.", "$HELPER; thought $TEAMMATE; deserved some help.", --[["Do you think $TEAMMATE; doesn't deserve your help?",]] "Situation over. $TEAMMATE;'s back up.", "$HELPER; earned some social credit.", "$TEAMMATE; is back up.", "$TEAMMATE;'s fine.", "I'm sure $TEAMMATE; didn't need really need the help anyway.", "I would have praised you if you helped.", "Now you're not getting the gold star.", "$HELPER; is the best.", "$HELPER; deserves a medal.", "Don't worry, $TEAMMATE; isn't dying anymore.", "$HELPER; has $TEAMMATE;'s back.", "What would we do without $HELPER;.", "Don't forget to help too. $HELPER; won't always be there.", "No need to feel bad for $TEAMMATE;. $HELPER; helped.", "$HELPER; was just closer to $TEAMMATE;, right?", "$TEAMMATE; is as good as new.", "$TEAMMATE; has received medical attention.", "$TEAMMATE; is done seeking attention.", "$TEAMMATE; was just being a drama queen.", "$TEAMMATE; has been saved.", "$TEAMMATE;'s legs work again.", "Aw shucks. $TEAMMATE; didn't die.", "$HELPER; is the Good Samaritan $TEAMMATE; needed.", "Doctor $HELPER; in the house!" },
+        hint_teammate_helpedup_touch = { "$HELPER; and $TEAMMATE; touched each other.", "You think $HELPER; has medical training?", "$HELPER; and $TEAMMATE;, sitting in a tree, K-I-S-S-I-N-G!", "$TEAMMATE; gave $HELPER; the cooties.", "I think $HELPER; loves $TEAMMATE;.", "$TEAMMATE; and $HELPER; look cute together.", "I ship $TEAMMATE; and $HELPER;.", "$HELPER; kissed the boo boo." },
         hint_you_were_helpedup = { "$HELPER; saved your ass.", "Thank $HELPER;.", "You're only alive because $HELPER; was here.", "You better appreciate what $HELPER; did for you.", "$HELPER; was here for you.", "What a good friend.", "Dust yourself off and get back to it.", "A near death experience isn't a reason to rest.", "You owe your life to $HELPER;.", "$HELPER; is so carrying you right now.", "Don't make me worried like that again.", "I was so worried about you.", "At least you didn't go into custody.", "No messiah?", "Got anything to say to $HELPER;?", "A thanks would be in order.", "Wake the fuck up Samurai.", "We've got a city to burn.", "You're finally awake.", "Oh hey, you didn't die.", "It could have been worse.", "At least you didn't go into custody.", "All better?", "Let this be a teachable moment.", "There. All better now.", "And stay out of trouble!", "Apes together strong." },
         hint_you_were_helpedup_touch = { "I don't like how $HELPER; touched you.", "You owe $HELPER; a pint.", "Did $HELPER; kiss your boo-boo?" },
 
@@ -1044,7 +1044,7 @@ function FH.select_hint(id)
     local selected_message = clean_weights_and_select(id, message_table, weight_table, false, false)
 
     local app_time = Application:time()
-    if FH.last_hint and FH.last_hint.id ~= "hint_cant_stand_up" and FH.last_hint.time + 0.03 > app_time then -- if it's overriding another message +0.03 is to account for a single frame at 30fps
+    if FH.last_hint and --[[FH.last_hint.id ~= "hint_cant_stand_up" and]] FH.last_hint.time + 0.03 > app_time then -- if it's overriding another message +0.03 is to account for a single frame at 30fps
         Global.FH.weights[FH.last_hint.id][FH.last_hint.text] = 0
         FH.log("Two messages played at once.\n" .. FH.last_hint.id .. "\n" .. id)
     end
@@ -1140,7 +1140,7 @@ function FH.sync_weight_on_duplicates(selected_message, weight)
         end
     end
     if log_sync_count > 0 then
-        FH.log("Weight set in sync_weight_on_duplicates " .. log_sync_count .. " times.")
+        --FH.log("Weight set in sync_weight_on_duplicates " .. log_sync_count .. " times.")
     end
 end
 
@@ -1183,7 +1183,7 @@ end
 local function register_sender(sender)
     if not FH.clients[sender] then
         FH.clients[sender] = true
-        FH.log("Registered client: " .. FH.get_unit_name(sender, false))
+        --FH.log("Registered client: " .. FH.get_unit_name(sender, false))
         return true
     else
         return false
@@ -1198,13 +1198,13 @@ function FH.show_networked_hint(net_data, gsub_data)
 end
 
 NetworkHelper:AddReceiveHook("handshake_request_FH", "handshake_request_FH", function(_, sender)
-    FH.log("Recieved handshake request from " .. FH.get_unit_name(sender, false))
+    --FH.log("Recieved handshake request from " .. FH.get_unit_name(sender, false))
     register_sender(sender)
     NetworkHelper:SendToPeer(sender, "handshake_accept_FH", "")
 end)
 
 NetworkHelper:AddReceiveHook("handshake_accept_FH", "handshake_accept_FH", function(_, sender)
-    FH.log("Handshake accepted by " .. FH.get_unit_name(sender, false))
+    --FH.log("Handshake accepted by " .. FH.get_unit_name(sender, false))
     register_sender(sender)
 end)
 

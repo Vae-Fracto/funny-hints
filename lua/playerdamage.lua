@@ -84,7 +84,7 @@ end)
 
 local fak_wasted = false
 Hooks:PreHook(PlayerDamage, "band_aid_health", "band_aid_health_FH", function(self)
-    if self._unit:_max_health() == self._unit:get_real_health() then
+    if self:_max_health() == self:get_real_health() then
         if not fak_wasted then
             FH.show_hint("replenished_nothing_1")
             fak_wasted = true

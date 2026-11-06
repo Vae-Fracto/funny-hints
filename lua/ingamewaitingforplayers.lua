@@ -6,7 +6,7 @@ Hooks:PostHook(IngameWaitingForPlayersState, "at_exit", "at_exit_FH", function(s
     end
 
     local level_id = FH.shared_ids.level[Global.game_settings.level_id] or Global.game_settings.level_id
-    FH.log("Level ID: " .. level_id)
+    --FH.log("Level ID: " .. level_id)
     local heist_specific = FH.heist_specific[level_id]
     if heist_specific then
         if heist_specific.override then
